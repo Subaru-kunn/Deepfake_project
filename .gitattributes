@@ -5,9 +5,9 @@
 *.py linguist-detectable=true
 *.ipynb linguist-detectable=true
 Dockerfile linguist-detectable=true
+*.html linguist-detectable=true
 
-# Exclude non-code or config files
-*.html linguist-detectable=false
+# Optional: still exclude data files or model files
 *.pkl linguist-detectable=false
 *.csv linguist-detectable=false
 *.txt linguist-detectable=false
