@@ -1,14 +1,13 @@
 # Normalize line endings
 * text=auto
 
-# Explicitly include code files in language stats
+# Include code files in language stats
 *.py linguist-detectable=true
-Dockerfile linguist-detectable=true
 *.ipynb linguist-detectable=true
+Dockerfile linguist-detectable=true
 
-# Exclude non-code files 
+# Exclude non-code or config files
+*.html linguist-detectable=false
 *.pkl linguist-detectable=false
 *.csv linguist-detectable=false
-*.h5 linguist-detectable=false
-*.json linguist-detectable=false
 *.txt linguist-detectable=false
