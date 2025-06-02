@@ -1,12 +1,14 @@
 # Normalize line endings
 * text=auto
 
-# Explicitly tell GitHub Linguist which files to detect
+# Explicitly include code files in language stats
 *.py linguist-detectable=true
 Dockerfile linguist-detectable=true
+*.ipynb linguist-detectable=true
 
-# Optional: prevent large/non-code files from being counted
+# Exclude non-code files 
 *.pkl linguist-detectable=false
-*.h5 linguist-detectable=false
 *.csv linguist-detectable=false
+*.h5 linguist-detectable=false
 *.json linguist-detectable=false
+*.txt linguist-detectable=false
